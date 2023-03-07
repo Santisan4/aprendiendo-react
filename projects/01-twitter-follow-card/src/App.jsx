@@ -1,7 +1,7 @@
 import './App.css'
 import { TwitterFollowCard } from './TwitterFollowCard'
 
-function App() {
+function App () {
   const users = [
     {
       name: 'Santiago Sanchez',
@@ -26,16 +26,16 @@ function App() {
   ]
 
   return (
-    <div className="App">
+    <div className='App'>
       {
-        users.map(({ userName, name, isFollowing}) => (
-            <TwitterFollowCard 
-              key={userName}
-              name={name}
-              userName={userName}
-              initialIsFollowing={isFollowing}
-            />
-          )
+        users.map(({ userName, name, isFollowing }) => (
+          <TwitterFollowCard
+            key={userName}
+            name={name}
+            userName={userName}
+            initialIsFollowing={isFollowing}
+          />
+        )
         )
       }
     </div>
